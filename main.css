@@ -1,0 +1,132 @@
+.box {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.card-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    min-width: 250px;
+    max-width: 300px;
+    min-height: 300px;
+  }
+
+#group {
+    position: absolute; left: 960px;
+}
+
+#wordcloud{
+    position: relative; 
+    top:500px;
+    left:-400px;
+}
+
+#cloud{
+    top:-200; 
+    left: 0; 
+    position:'absolute';
+}
+
+  #toptext{
+    color:gray;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+#secretId{
+    /* display: block; */
+}
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#person_second {
+    background-color: #deeff5;
+}
+
+#person_third {
+    background-color: #ffe9ec;
+}
+
+.card-3>h5 {
+    padding: 15px 15px 15px 10px;
+}
+
+#secretId{
+    display: none;
+}
+
+#addbutton{
+    height: 4em;
+    width: 12em;
+    align-self: center;
+}
+
+.card-3>p {
+    padding: 15px 15px 15px 10px;
+}
+
+#personal_info{
+    display:none;
+}
+
+button {
+    margin: 10px 10px 10px 10px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+#example{
+    width:95%;
+    height:500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#people-table {
+    min-height: 510px;
+    background-color: #FFFFE0;
+}
+
+/* for bar charts */  
+.bar{
+    fill: steelblue;
+}
+
+.bar:hover{
+  fill: brown;
+}
+
+  .axis {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  body {
+    font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+}
+.legend {
+    border: 1px solid #555555;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 0.8em;
+    margin: 10px;
+    padding: 8px;
+}
+.bld {
+    font-weight: bold;
+}

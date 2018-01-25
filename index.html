@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sylvester/0.1.3/sylvester.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="d3.layout.cloud.js"></script>    
+    <script src="https://syntagmatic.github.io/parallel-coordinates/d3.parcoords.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://syntagmatic.github.io/parallel-coordinates/d3.parcoords.css"><title>D3</title>
+</head>
+<body>
+<h2 id="toptext">Click and drag on the axes to filter, click on axis again to remove filter</h2>
+    <div id="example" class="parcoords"></div>
+    <div class="buttons">
+        <button id="target" class="btn btn-success">Filter</button>
+        <button id="clear_filter" class="btn btn-secondary">Clear Filter</button>
+        <button id="clear_highlights" class="btn btn-secondary">Clear highlight</button>
+    </div>
+        <div class="row">
+            <div class="col-5" id="people-table">
+                <table class="table table-hover" id="people-table-inner">
+                    <thead>
+                        <td>
+                            <span class='box' style='background-color:"white";'></span>
+                        </td>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Major
+                        </td>
+                    </thead>
+                    <tbody id="peoples">
+        
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-7">
+                <div id="personal_info">
+                <table class="table">
+                    <thead>
+                        <td>
+                            <span class='box' style='background-color:"white";'></span>
+                        </td>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Major
+                        </td>
+                    </thead>
+                    <tbody id="person_first">
+        
+                    </tbody>
+                </table>
+                <div class="flex-container">
+                    <div class="card-3" id="person_second">
+                        <h5>Hobbies and interests</h5>
+                    </div>
+                    <button class="btn btn-info" id="addbutton">Add to group</button>
+                    <div class="card-3" id="person_third">
+                        <h5>Expectations</h5>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div id="barchart"></div>
+                </div>
+            <div class="col-5" id="group">
+                <div id="group-table">
+                    <h2 id="Group-title">Current group</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <td>
+                                <span class='box' style='background-color:"white";'></span>
+                            </td>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Major
+                            </td>
+                        </thead>
+                        <tbody id="group_table_body">
+            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-5" id="wordcloud">
+            </div>
+        </div>
+
+    <!-- importing our data variable -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="main.js"></script>    
+</body>
+</html>
