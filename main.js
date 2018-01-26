@@ -139,11 +139,11 @@
       "Class Average": 1,
       "Current Group Average": 0
     },
-    {
-      "Subject": "GFX prog.",
-      "Class Average": 1,
-      "Current Group Average": 0
-    },
+    // {
+    //   "Subject": "GFX prog.",
+    //   "Class Average": 1,
+    //   "Current Group Average": 0
+    // },
     {
       "Subject": "UX eval.",
       "Class Average": 3,
@@ -301,10 +301,10 @@
       type: "number",
       yscale: scale,
     },
-    "GFX prog.": {
-      type: "number",
-      yscale: scale,
-    },
+    // "GFX prog.": {
+    //   type: "number",
+    //   yscale: scale,
+    // },
     "HCI prog.": {
       type: "number",
       yscale: scale,
